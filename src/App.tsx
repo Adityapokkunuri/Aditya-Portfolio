@@ -75,7 +75,7 @@ export default function App() {
       return { tag: '03 / 06', name: 'Sakhi', desc: 'Maternal health & clinical guidance RAG engine' };
     }
     if (activeSectionIndex === 3) {
-      return { tag: '04 / 06', name: 'Talent Ops', desc: 'Gatekeeper vision QC & multimodal screening' };
+      return { tag: '04 / 06', name: 'Talent Ops', desc: 'AI-native HR operations hub with Gatekeeper quality control' };
     }
     if (activeSectionIndex === 4) {
       return { tag: '05 / 06', name: 'Ottobon Jobs', desc: 'Hexagonal architecture with 20+ scraper adapters' };

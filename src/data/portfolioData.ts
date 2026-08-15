@@ -115,8 +115,8 @@ export const PROJECTS: ProjectCaseStudy[] = [
     clientOrOrg: 'OTTOBON Professional Services',
     role: 'Lead — Agentic AI Solutions Architect',
     year: 'September 2025 – Present',
-    summary: 'Architected and led the development of a resilient, distributed job aggregation and intelligence engine parsing hundreds of thousands of dynamic career portals daily with real-time taxonomy normalization and structured schema synthesis.',
-    architectureDetails: 'Led the architecture and implementation of a strict Hexagonal (Ports & Adapters) architecture supporting 20+ isolated scraping adapters, anti-blocking proxy rotation, and real-time LLM-powered schema extraction that translates unstructured job listings into structured occupational taxonomy.',
+    summary: 'Architected and led the development of a resilient job aggregation and intelligence engine with nightly ingestion from 20+ sources (job boards, ATS platforms, consulting firms), processing thousands of postings automatically with SHA-256 content-hash deduplication.',
+    architectureDetails: 'Led a strict Hexagonal architecture integrating a hybrid matching engine (cosine similarity, skill-overlap, AI experience alignment), an AI career coach, and a mock interview evaluation engine. Secured by JWT authentication, Supabase RLS, and a rate-limited API gateway.',
     keySpecs: [
       {
         label: 'Source Adapters',
@@ -129,9 +129,14 @@ export const PROJECTS: ProjectCaseStudy[] = [
         description: 'Strict separation of ingestion adapters, domain normalization, and query ports.'
       },
       {
-        label: 'Entity Extraction',
-        value: 'Real-Time Taxonomy',
-        description: 'Automated skill categorization, salary parsing, and seniority classification.'
+        label: 'Intelligence Layer',
+        value: 'Hybrid Matching Engine',
+        description: 'OpenAI embeddings, skill-overlap analysis, and AI mock interview evaluations.'
+      },
+      {
+        label: 'Infrastructure Security',
+        value: 'JWT & Supabase RLS',
+        description: 'Robust authentication with Row-Level Security and rate-limited API gateway.'
       }
     ],
     tags: ['Hexagonal Architecture', 'Distributed Harvesters', 'Schema Synthesis', 'pgvector', 'High-Throughput Ingestion'],

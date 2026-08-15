@@ -105,7 +105,6 @@ export const ClosingSection: React.FC<ClosingSectionProps> = ({ onScrollToTop })
           {/* Right Column: Quiet Colophon */}
           <div className="md:col-span-4 md:text-right font-mono-tag text-[10px] sm:text-[11px] text-[#7A7266] space-y-1">
             <div>Aditya Pokkunuri © {new Date().getFullYear()}</div>
-            <div>Editorial Systems Architecture Portfolio</div>
           </div>
         </div>
       </div>
